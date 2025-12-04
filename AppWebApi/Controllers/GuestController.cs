@@ -37,11 +37,10 @@ namespace AppWebApi.Controllers
             }
         }
 
-        public GuestController(IAdminService service, ILoginService loginService,
+        public GuestController(IAdminService service,
                 ILogger<GuestController> logger)
         {
             _service = service;
-            _loginService = loginService;
             _logger = logger;
         }
     }
